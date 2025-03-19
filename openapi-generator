@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+PERSONIO_AUTH_API=https://raw.githubusercontent.com/personio/api-docs/refs/heads/master/personio-auth-api.yaml
+PERSONIO_AUTH_API_PATH=personio-auth
+
+PERSONIO_PERSONNEL_API=https://raw.githubusercontent.com/personio/api-docs/refs/heads/master/personio-personnel-data-api-oa3.yaml
+PERSONIO_PERSONNEL_API_PATH=personio-personnel
+
+# Generate rust code for the Auth-API
+docker run -u $(id -u):$(id -g) --rm \
+    -v $PWD:/local openapitools/openapi-generator-cli generate \
+    -i $PERSONIO_AUTH_API \
+    -g rust \
+    --additional-properties=packageName=personio-auth \
+    -o /local/$PERSONIO_AUTH_API_PATH
+
+# Generate rust code for the Personnel-API
+docker run -u $(id -u):$(id -g) --rm \
+    -v $PWD:/local openapitools/openapi-generator-cli generate \
+    -i $PERSONIO_PERSONNEL_API \
+    -g rust \
+    --additional-properties=packageName=personio-personnel \
+    -o /local/$PERSONIO_PERSONNEL_API_PATH

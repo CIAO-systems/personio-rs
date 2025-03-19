@@ -1,0 +1,13 @@
+[package]
+name = "personio-rs"
+version = "0.1.0"
+description = "Personio Rust binding"
+edition = "2021"
+
+[dependencies]
+personio-auth = { path = "personio-auth"}
+personio-personnel = { path = "personio-personnel"}
+
+[dev-dependencies]
+dotenv = "0.15.0"
+tokio = { version = "1", features = ["full", "test-util"] }
