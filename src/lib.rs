@@ -17,6 +17,7 @@ mod tests {
     };
 
     #[tokio::test]
+    #[ignore = "for manual testing"]
     async fn test_auth() -> Result<(), Box<dyn Error>> {
         dotenv().ok();
 

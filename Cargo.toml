@@ -7,7 +7,9 @@ edition = "2021"
 [dependencies]
 personio-auth = { path = "personio-auth"}
 personio-personnel = { path = "personio-personnel"}
-
-[dev-dependencies]
-dotenv = "0.15.0"
+dotenv = "0.15"
 tokio = { version = "1", features = ["full", "test-util"] }
+
+[[bin]]
+name = "login"
+path = "bin/login.rs"
