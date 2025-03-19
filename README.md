@@ -1,3 +1,4 @@
+[![Workflow Status](https://github.com/CIAO-systems/personio-rs/actions/workflows/rust.yml/badge.svg)](https://github.com/CIAO-systems/personio-rs/actions/workflows/rust.yml)
 ![GitHub License](https://img.shields.io/github/license/CIAO-systems/personio-rs?style=flat)
 
 
