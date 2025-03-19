@@ -10,7 +10,7 @@ To use the library in your project, add it to the dependencies:
 [dependencies]
 personio-rs = { git = "https://github.com/CIAO-systems/personio-rs" }
 ```
-## Authentication form environment
+## Authentication from the environment
 The function `personio_rs::auth::login_from_env` takes the client credentials from the environment variables:
 | Variable | Description |
 | --- | --- |
