@@ -1,10 +1,6 @@
-pub mod auth {
-    pub use personio_auth::*;
-}
 
-pub mod personnel {
-    pub use personio_personnel::*;
-}
+pub mod auth;
+pub mod personnel;
 
 #[cfg(test)]
 mod tests {
