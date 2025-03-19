@@ -1,3 +1,6 @@
+![GitHub License](https://img.shields.io/github/license/CIAO-systems/personio-rs?style=flat)
+
+
 # Personio API
 To generate Rust code from the Personio-API, the [OpenAPI Generator](https://openapi-generator.tech/) is used. The documentation for the Rust configuration can be found [here](https://openapi-generator.tech/docs/generators/rust)
 
