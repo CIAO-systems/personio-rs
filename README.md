@@ -10,6 +10,12 @@ To use the library in your project, add it to the dependencies:
 [dependencies]
 personio-rs = { git = "https://github.com/CIAO-systems/personio-rs" }
 ```
+## Authentication form environment
+The function `personio_rs::auth::login_from_env` takes the client credentials from the environment variables:
+| Variable | Description |
+| --- | --- |
+| PERSONIO_CLIENT_ID | The client id from Personio |
+| PERSONIO_CLIENT_SECRET | The client secret from Persnio |
 
 ## Example
 Here is an example, of how to use the library to authenticate with the credentials from the environment and then list all the names of the comany employees:
