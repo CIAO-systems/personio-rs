@@ -33,6 +33,7 @@ impl ProjectAttributes {
             active: None,
             created_at: None,
             updated_at: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

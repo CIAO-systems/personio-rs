@@ -26,6 +26,7 @@ impl DocumentUploadSuccessResponse {
         DocumentUploadSuccessResponse {
             success: None,
             data: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -26,6 +26,7 @@ impl EmployeeAbsenceBalance {
         EmployeeAbsenceBalance {
             success: None,
             data: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

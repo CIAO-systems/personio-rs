@@ -26,6 +26,7 @@ impl Response {
         Response {
             success,
             data,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

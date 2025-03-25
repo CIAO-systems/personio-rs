@@ -23,6 +23,7 @@ impl EmployeeUpdatedResponseData {
     pub fn new() -> EmployeeUpdatedResponseData {
         EmployeeUpdatedResponseData {
             id: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

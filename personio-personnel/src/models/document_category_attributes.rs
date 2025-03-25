@@ -23,6 +23,7 @@ impl DocumentCategoryAttributes {
     pub fn new() -> DocumentCategoryAttributes {
         DocumentCategoryAttributes {
             name: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -38,6 +38,7 @@ impl SalaryHistoricalAttribute {
             currency_symbol: None,
             employee_id: None,
             effective_date: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

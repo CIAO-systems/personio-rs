@@ -23,6 +23,7 @@ impl CompanyTimeOffsPost200Response {
     pub fn new() -> CompanyTimeOffsPost200Response {
         CompanyTimeOffsPost200Response {
             data: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

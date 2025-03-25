@@ -26,6 +26,7 @@ impl DepartmentValueAttributes {
         DepartmentValueAttributes {
             id,
             name,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

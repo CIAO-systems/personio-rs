@@ -26,6 +26,7 @@ impl EmployeeCreationErrorResponseError {
         EmployeeCreationErrorResponseError {
             code: None,
             message: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

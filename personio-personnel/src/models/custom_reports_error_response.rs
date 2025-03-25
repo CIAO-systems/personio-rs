@@ -32,6 +32,7 @@ impl CustomReportsErrorResponse {
             trace_id: None,
             timestamp: None,
             errors: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

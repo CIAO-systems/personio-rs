@@ -26,6 +26,7 @@ impl CompanyAbsencePeriodsGet404Response {
         CompanyAbsencePeriodsGet404Response {
             success: None,
             error: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

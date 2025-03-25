@@ -50,6 +50,7 @@ impl AttendanceCreateUpdate400ErrorResponseErrorDetailedMessageInner {
             r#break: None,
             comment: None,
             project_id: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

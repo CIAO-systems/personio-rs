@@ -26,6 +26,7 @@ impl ErrorResponseError {
         ErrorResponseError {
             code: None,
             message: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

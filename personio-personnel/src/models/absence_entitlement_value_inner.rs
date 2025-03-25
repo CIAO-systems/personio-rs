@@ -26,6 +26,7 @@ impl AbsenceEntitlementValueInner {
         AbsenceEntitlementValueInner {
             r#type: None,
             attributes: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

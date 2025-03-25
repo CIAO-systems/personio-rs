@@ -26,6 +26,7 @@ impl CompanyAttendancesProjectsGet200Response {
         CompanyAttendancesProjectsGet200Response {
             success: None,
             data: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

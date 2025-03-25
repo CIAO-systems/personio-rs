@@ -26,6 +26,7 @@ impl DocumentCategoriesResponse {
         DocumentCategoriesResponse {
             success: None,
             data: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

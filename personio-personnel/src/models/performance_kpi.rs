@@ -26,6 +26,7 @@ impl PerformanceKpi {
         PerformanceKpi {
             performance_kpi_id: None,
             performance_kpi_value: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

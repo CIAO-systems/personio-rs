@@ -35,6 +35,7 @@ impl EmployeeFixSalary {
             r#type: None,
             universal_id: None,
             currency: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

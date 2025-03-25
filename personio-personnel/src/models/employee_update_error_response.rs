@@ -26,6 +26,7 @@ impl EmployeeUpdateErrorResponse {
         EmployeeUpdateErrorResponse {
             success: None,
             error: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

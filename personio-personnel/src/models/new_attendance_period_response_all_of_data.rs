@@ -26,6 +26,7 @@ impl NewAttendancePeriodResponseAllOfData {
         NewAttendancePeriodResponseAllOfData {
             id: None,
             message: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

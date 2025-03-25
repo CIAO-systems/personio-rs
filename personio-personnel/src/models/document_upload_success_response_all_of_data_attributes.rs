@@ -35,6 +35,7 @@ impl DocumentUploadSuccessResponseAllOfDataAttributes {
             comment: None,
             employee: None,
             category_id: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

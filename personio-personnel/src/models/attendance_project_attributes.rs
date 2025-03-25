@@ -26,6 +26,7 @@ impl AttendanceProjectAttributes {
         AttendanceProjectAttributes {
             name: None,
             active: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

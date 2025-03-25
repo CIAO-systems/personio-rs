@@ -70,6 +70,7 @@ impl PublicHistoricalReportItemsAttributes {
             filters: None,
             period_type: None,
             items: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

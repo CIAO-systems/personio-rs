@@ -29,6 +29,7 @@ impl PublicReportMetaData {
             total_elements: None,
             current_page: None,
             total_pages: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

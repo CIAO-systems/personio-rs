@@ -35,6 +35,7 @@ impl SalaryAttribute {
             amount: None,
             currency_symbol: None,
             employee_id: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

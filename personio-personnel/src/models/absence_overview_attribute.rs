@@ -41,6 +41,7 @@ impl AbsenceOverviewAttribute {
             duration_days: None,
             duration_hours: None,
             employee_id: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

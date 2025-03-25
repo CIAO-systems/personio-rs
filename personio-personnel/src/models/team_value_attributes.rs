@@ -23,6 +23,7 @@ impl TeamValueAttributes {
     pub fn new() -> TeamValueAttributes {
         TeamValueAttributes {
             name: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

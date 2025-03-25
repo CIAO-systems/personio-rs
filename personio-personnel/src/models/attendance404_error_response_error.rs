@@ -26,6 +26,7 @@ impl Attendance404ErrorResponseError {
         Attendance404ErrorResponseError {
             code: None,
             message: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

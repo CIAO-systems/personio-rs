@@ -23,6 +23,7 @@ impl DeletedAbsenceResponseData {
     pub fn new() -> DeletedAbsenceResponseData {
         DeletedAbsenceResponseData {
             message: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

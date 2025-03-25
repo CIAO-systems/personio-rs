@@ -29,6 +29,7 @@ impl AttendanceCreateUpdate400ErrorResponseError {
             code: None,
             message: None,
             detailed_message: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

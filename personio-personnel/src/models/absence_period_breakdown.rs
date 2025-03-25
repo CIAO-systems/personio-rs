@@ -27,6 +27,7 @@ impl AbsencePeriodBreakdown {
         AbsencePeriodBreakdown {
             date,
             effective_duration,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

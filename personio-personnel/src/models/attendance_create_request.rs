@@ -27,6 +27,7 @@ impl AttendanceCreateRequest {
         AttendanceCreateRequest {
             attendances: None,
             skip_approval: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -32,6 +32,7 @@ impl CostCenterAttribute {
             data_type: None,
             employee_id: None,
             cost_centers: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

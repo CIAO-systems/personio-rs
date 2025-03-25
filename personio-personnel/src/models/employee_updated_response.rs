@@ -29,6 +29,7 @@ impl EmployeeUpdatedResponse {
             success: None,
             data: None,
             meta: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

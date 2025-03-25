@@ -26,6 +26,7 @@ impl EmployeeCreatedResponseData {
         EmployeeCreatedResponseData {
             id: None,
             message: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -26,6 +26,7 @@ impl PerformanceTarget {
         PerformanceTarget {
             performance_target_id: None,
             performance_target_value: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -69,6 +69,7 @@ impl CompanyEmployeesPostRequestEmployee {
             status: None,
             supervisor_id: None,
             custom_attributes: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -26,6 +26,7 @@ impl DocumentUploadFailedWithUnsupportedFileTypeResponse {
         DocumentUploadFailedWithUnsupportedFileTypeResponse {
             success: None,
             error: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

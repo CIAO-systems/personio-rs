@@ -41,6 +41,7 @@ impl AbsencePeriodAttribute {
             half_day_at_start: None,
             half_day_at_end: None,
             employee_id: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

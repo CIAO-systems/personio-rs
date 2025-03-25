@@ -36,6 +36,7 @@ impl TimeOffTypeResourceAttributes {
             category: None,
             unit: None,
             approval_required: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -32,6 +32,7 @@ impl EmployeeProfilePicture {
             value: None,
             r#type: None,
             universal_id: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

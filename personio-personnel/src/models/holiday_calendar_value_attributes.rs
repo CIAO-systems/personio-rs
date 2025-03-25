@@ -32,6 +32,7 @@ impl HolidayCalendarValueAttributes {
             name: None,
             country: None,
             state: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

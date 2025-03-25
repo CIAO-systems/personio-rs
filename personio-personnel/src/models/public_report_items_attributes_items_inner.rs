@@ -26,6 +26,7 @@ impl PublicReportItemsAttributesItemsInner {
         PublicReportItemsAttributesItemsInner {
             employee_id: None,
             attributes: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

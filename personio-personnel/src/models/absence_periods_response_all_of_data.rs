@@ -26,6 +26,7 @@ impl AbsencePeriodsResponseAllOfData {
         AbsencePeriodsResponseAllOfData {
             r#type,
             attributes: Box::new(attributes),
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -44,6 +44,7 @@ impl AttendanceUpdateRequest {
             comment: None,
             project_id: None,
             skip_approval: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -26,6 +26,7 @@ impl CompanyAttendancesProjectsIdPatch400Response {
         CompanyAttendancesProjectsIdPatch400Response {
             success: None,
             error: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

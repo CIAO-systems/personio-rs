@@ -29,6 +29,7 @@ impl CostCenter {
             cost_center_id: None,
             value: None,
             weight: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

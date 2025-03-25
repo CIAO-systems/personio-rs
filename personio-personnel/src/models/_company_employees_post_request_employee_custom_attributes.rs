@@ -24,6 +24,7 @@ impl CompanyEmployeesPostRequestEmployeeCustomAttributes {
     pub fn new() -> CompanyEmployeesPostRequestEmployeeCustomAttributes {
         CompanyEmployeesPostRequestEmployeeCustomAttributes {
             dynamic_left_curly_bracket_left_curly_bracket__field_uid_right_curly_bracket_right_curly_bracket: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

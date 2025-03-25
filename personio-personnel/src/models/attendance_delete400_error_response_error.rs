@@ -26,6 +26,7 @@ impl AttendanceDelete400ErrorResponseError {
         AttendanceDelete400ErrorResponseError {
             code: None,
             message: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

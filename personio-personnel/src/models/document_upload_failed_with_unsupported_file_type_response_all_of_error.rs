@@ -29,6 +29,7 @@ impl DocumentUploadFailedWithUnsupportedFileTypeResponseAllOfError {
             message: None,
             code: None,
             error_data: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

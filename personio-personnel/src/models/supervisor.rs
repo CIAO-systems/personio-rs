@@ -26,6 +26,7 @@ impl Supervisor {
         Supervisor {
             label: None,
             value: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

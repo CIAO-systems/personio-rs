@@ -50,6 +50,7 @@ impl Attendance {
             is_on_time_off: None,
             status: None,
             project: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -26,6 +26,7 @@ impl HourlyAbsencePeriodResponse {
         HourlyAbsencePeriodResponse {
             success,
             data: Box::new(data),
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

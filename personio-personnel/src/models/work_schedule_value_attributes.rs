@@ -47,6 +47,7 @@ impl WorkScheduleValueAttributes {
             friday: None,
             saturday: None,
             sunday: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -26,6 +26,7 @@ impl DocumentUploadFailedWithBadDocumentCategoryResponse {
         DocumentUploadFailedWithBadDocumentCategoryResponse {
             success: None,
             error: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

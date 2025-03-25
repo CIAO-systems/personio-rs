@@ -29,6 +29,7 @@ impl AbsenceType {
             id,
             name: None,
             time_off_type_id: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

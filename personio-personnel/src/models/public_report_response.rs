@@ -35,6 +35,7 @@ impl PublicReportResponse {
             offset: None,
             limit: None,
             data: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

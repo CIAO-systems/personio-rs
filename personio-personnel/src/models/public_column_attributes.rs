@@ -29,6 +29,7 @@ impl PublicColumnAttributes {
             attribute_id: None,
             human_readable: None,
             data_type: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

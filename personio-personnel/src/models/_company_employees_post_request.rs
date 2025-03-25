@@ -23,6 +23,7 @@ impl CompanyEmployeesPostRequest {
     pub fn new() -> CompanyEmployeesPostRequest {
         CompanyEmployeesPostRequest {
             employee: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

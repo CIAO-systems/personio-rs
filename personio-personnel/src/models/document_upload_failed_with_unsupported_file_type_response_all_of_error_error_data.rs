@@ -23,6 +23,7 @@ impl DocumentUploadFailedWithUnsupportedFileTypeResponseAllOfErrorErrorData {
     pub fn new() -> DocumentUploadFailedWithUnsupportedFileTypeResponseAllOfErrorErrorData {
         DocumentUploadFailedWithUnsupportedFileTypeResponseAllOfErrorErrorData {
             file: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

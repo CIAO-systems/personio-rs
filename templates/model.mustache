@@ -171,6 +171,7 @@ impl {{{classname}}} {
             {{#vars}}
             {{{name}}}{{^required}}: None{{/required}}{{#required}}{{#isModel}}{{^avoidBoxedModels}}: {{^isNullable}}Box::new({{{name}}}){{/isNullable}}{{#isNullable}}if let Some(x) = {{{name}}} {Some(Box::new(x))} else {None}{{/isNullable}}{{/avoidBoxedModels}}{{/isModel}}{{/required}},
             {{/vars}}
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -26,6 +26,7 @@ impl AbsenceEntitlement {
         AbsenceEntitlement {
             label,
             value,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

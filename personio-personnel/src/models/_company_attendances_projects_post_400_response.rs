@@ -26,6 +26,7 @@ impl CompanyAttendancesProjectsPost400Response {
         CompanyAttendancesProjectsPost400Response {
             success: None,
             error: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

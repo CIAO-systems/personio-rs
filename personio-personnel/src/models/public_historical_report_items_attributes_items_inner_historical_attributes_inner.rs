@@ -50,6 +50,7 @@ impl PublicHistoricalReportItemsAttributesItemsInnerHistoricalAttributesInner {
             cost_centers: None,
             amount: None,
             currency_symbol: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

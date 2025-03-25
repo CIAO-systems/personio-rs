@@ -29,6 +29,7 @@ impl AbsenceTimeOffTypeAttributes {
             id: None,
             name: None,
             category: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

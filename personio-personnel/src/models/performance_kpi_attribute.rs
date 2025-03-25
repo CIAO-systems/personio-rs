@@ -32,6 +32,7 @@ impl PerformanceKpiAttribute {
             data_type: None,
             employee_id: None,
             performance_target_kpis: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

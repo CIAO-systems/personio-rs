@@ -32,6 +32,7 @@ impl DurationAttribute {
             data_type: None,
             duration: None,
             employee_id: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -26,6 +26,7 @@ impl PublicHistoricalReportItemsAttributesItemsInner {
         PublicHistoricalReportItemsAttributesItemsInner {
             employee_id: None,
             historical_attributes: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -23,6 +23,7 @@ impl OfficeValueAttributes {
     pub fn new() -> OfficeValueAttributes {
         OfficeValueAttributes {
             name: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

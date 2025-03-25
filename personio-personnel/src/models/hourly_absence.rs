@@ -80,6 +80,7 @@ impl HourlyAbsence {
             updated_at: None,
             approved_at: None,
             breakdowns: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -80,6 +80,7 @@ impl PublicReportItemsAttributesItemsInnerAttributesInner {
             currency_code: None,
             overtime_hours: None,
             bonus_type: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

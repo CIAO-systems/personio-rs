@@ -35,6 +35,7 @@ impl CostCenterHistoricalAttribute {
             employee_id: None,
             cost_centers: None,
             effective_date: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

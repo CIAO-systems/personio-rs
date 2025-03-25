@@ -26,6 +26,7 @@ impl PerformanceTargetKpi {
         PerformanceTargetKpi {
             performance_target_id: None,
             performance_kpis: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -32,6 +32,7 @@ impl EmployeesResponseAllOfMetadata {
             total_elements,
             total_pages,
             current_page,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

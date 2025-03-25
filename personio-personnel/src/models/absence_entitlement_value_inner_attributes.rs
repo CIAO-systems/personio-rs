@@ -29,6 +29,7 @@ impl AbsenceEntitlementValueInnerAttributes {
             id: None,
             name: None,
             entitlement: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

@@ -119,6 +119,7 @@ impl Employee {
             last_working_day: None,
             profile_picture: None,
             dynamic_21827: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

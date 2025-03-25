@@ -32,6 +32,7 @@ impl DefaultAttribute {
             data_type: None,
             value: None,
             employee_id: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

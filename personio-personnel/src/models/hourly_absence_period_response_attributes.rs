@@ -77,6 +77,7 @@ impl HourlyAbsencePeriodResponseAttributes {
             updated_at,
             approved_at: None,
             breakdowns,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

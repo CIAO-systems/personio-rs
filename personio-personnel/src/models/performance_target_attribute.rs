@@ -32,6 +32,7 @@ impl PerformanceTargetAttribute {
             data_type: None,
             employee_id: None,
             performance_targets: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

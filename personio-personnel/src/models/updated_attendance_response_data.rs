@@ -23,6 +23,7 @@ impl UpdatedAttendanceResponseData {
     pub fn new() -> UpdatedAttendanceResponseData {
         UpdatedAttendanceResponseData {
             message: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

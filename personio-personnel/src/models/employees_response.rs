@@ -35,6 +35,7 @@ impl EmployeesResponse {
             metadata: None,
             offset: None,
             limit: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

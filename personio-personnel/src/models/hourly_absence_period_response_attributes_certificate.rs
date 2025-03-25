@@ -23,6 +23,7 @@ impl HourlyAbsencePeriodResponseAttributesCertificate {
     pub fn new() -> HourlyAbsencePeriodResponseAttributesCertificate {
         HourlyAbsencePeriodResponseAttributesCertificate {
             status: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

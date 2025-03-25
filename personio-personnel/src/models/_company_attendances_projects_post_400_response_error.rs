@@ -23,6 +23,7 @@ impl CompanyAttendancesProjectsPost400ResponseError {
     pub fn new() -> CompanyAttendancesProjectsPost400ResponseError {
         CompanyAttendancesProjectsPost400ResponseError {
             name: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

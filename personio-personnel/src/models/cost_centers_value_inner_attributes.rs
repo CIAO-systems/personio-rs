@@ -29,6 +29,7 @@ impl CostCentersValueInnerAttributes {
             name: None,
             id: None,
             percentage: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

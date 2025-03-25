@@ -23,6 +23,7 @@ impl CompanyAttendancesProjectsIdPatch400ResponseError {
     pub fn new() -> CompanyAttendancesProjectsIdPatch400ResponseError {
         CompanyAttendancesProjectsIdPatch400ResponseError {
             active: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

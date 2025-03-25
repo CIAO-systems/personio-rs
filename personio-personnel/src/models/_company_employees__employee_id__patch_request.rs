@@ -23,6 +23,7 @@ impl CompanyEmployeesEmployeeIdPatchRequest {
     pub fn new() -> CompanyEmployeesEmployeeIdPatchRequest {
         CompanyEmployeesEmployeeIdPatchRequest {
             employee: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

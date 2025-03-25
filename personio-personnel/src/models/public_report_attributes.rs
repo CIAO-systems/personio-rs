@@ -67,6 +67,7 @@ impl PublicReportAttributes {
             columns: None,
             filters: None,
             period_type: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

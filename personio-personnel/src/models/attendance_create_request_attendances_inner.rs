@@ -43,6 +43,7 @@ impl AttendanceCreateRequestAttendancesInner {
             r#break,
             comment: None,
             project_id: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

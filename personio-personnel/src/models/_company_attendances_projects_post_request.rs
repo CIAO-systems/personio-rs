@@ -26,6 +26,7 @@ impl CompanyAttendancesProjectsPostRequest {
         CompanyAttendancesProjectsPostRequest {
             name,
             active: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

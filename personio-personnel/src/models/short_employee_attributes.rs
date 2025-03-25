@@ -32,6 +32,7 @@ impl ShortEmployeeAttributes {
             first_name: None,
             last_name: None,
             email: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

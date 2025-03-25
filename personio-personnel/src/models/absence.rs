@@ -60,6 +60,7 @@ impl Absence {
             created_at: None,
             created_by: None,
             updated_at: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

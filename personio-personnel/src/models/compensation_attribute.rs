@@ -44,6 +44,7 @@ impl CompensationAttribute {
             overtime_hours: None,
             bonus_type: None,
             employee_id: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }

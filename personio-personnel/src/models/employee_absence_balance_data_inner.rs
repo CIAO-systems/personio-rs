@@ -37,6 +37,7 @@ impl EmployeeAbsenceBalanceDataInner {
             category: None,
             balance: None,
             available_balance: None,
+            additional_properties: std::collections::HashMap::new(),
         }
     }
 }
