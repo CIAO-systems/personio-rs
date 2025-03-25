@@ -23,6 +23,8 @@ pub struct CostCenterHistoricalAttribute {
     pub cost_centers: Option<Vec<models::CostCenter>>,
     #[serde(rename = "effective_date", skip_serializing_if = "Option::is_none")]
     pub effective_date: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl CostCenterHistoricalAttribute {

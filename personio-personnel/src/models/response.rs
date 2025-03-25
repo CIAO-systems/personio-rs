@@ -17,6 +17,8 @@ pub struct Response {
     pub success: bool,
     #[serde(rename = "data")]
     pub data: serde_json::Value,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl Response {

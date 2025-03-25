@@ -19,6 +19,8 @@ pub struct PublicReportMetaData {
     pub current_page: Option<i32>,
     #[serde(rename = "total_pages", skip_serializing_if = "Option::is_none")]
     pub total_pages: Option<i32>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PublicReportMetaData {

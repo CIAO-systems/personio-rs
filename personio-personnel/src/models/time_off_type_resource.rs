@@ -18,6 +18,8 @@ pub struct TimeOffTypeResource {
     pub r#type: Option<Type>,
     #[serde(rename = "attributes", skip_serializing_if = "Option::is_none")]
     pub attributes: Option<Box<models::TimeOffTypeResourceAttributes>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl TimeOffTypeResource {

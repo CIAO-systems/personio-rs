@@ -21,6 +21,8 @@ pub struct ShortEmployeeAttributes {
     pub last_name: Option<Box<models::ShortEmployeeAttributesLastName>>,
     #[serde(rename = "email", skip_serializing_if = "Option::is_none")]
     pub email: Option<Box<models::EmployeeEmail>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl ShortEmployeeAttributes {

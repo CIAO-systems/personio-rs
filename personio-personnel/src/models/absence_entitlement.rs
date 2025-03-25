@@ -17,6 +17,8 @@ pub struct AbsenceEntitlement {
     pub label: Option<serde_json::Value>,
     #[serde(rename = "value")]
     pub value: Vec<models::AbsenceEntitlementValueInner>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl AbsenceEntitlement {

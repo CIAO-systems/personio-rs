@@ -19,6 +19,8 @@ pub struct AbsenceTimeOffTypeAttributes {
     pub name: Option<String>,
     #[serde(rename = "category", skip_serializing_if = "Option::is_none")]
     pub category: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl AbsenceTimeOffTypeAttributes {

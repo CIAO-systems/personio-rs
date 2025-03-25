@@ -22,6 +22,8 @@ pub struct EmployeesResponseAllOfMetadata {
     /// Current page number containing the returned set of items matching with the query filters. The page number range is from 0 to total_pages - 1
     #[serde(rename = "current_page")]
     pub current_page: i32,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl EmployeesResponseAllOfMetadata {

@@ -17,6 +17,8 @@ pub struct EmployeeResponse {
     pub success: bool,
     #[serde(rename = "data")]
     pub data: Box<models::EmployeesResponseAllOfData>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl EmployeeResponse {

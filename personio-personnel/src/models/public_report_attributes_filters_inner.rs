@@ -19,6 +19,8 @@ pub struct PublicReportAttributesFiltersInner {
     pub comparison: Option<String>,
     #[serde(rename = "value", skip_serializing_if = "Option::is_none")]
     pub value: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PublicReportAttributesFiltersInner {

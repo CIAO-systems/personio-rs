@@ -17,6 +17,8 @@ pub struct NewAttendancePeriodResponse {
     pub success: bool,
     #[serde(rename = "data")]
     pub data: Box<models::NewAttendancePeriodResponseAllOfData>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl NewAttendancePeriodResponse {

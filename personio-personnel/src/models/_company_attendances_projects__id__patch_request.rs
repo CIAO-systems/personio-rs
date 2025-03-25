@@ -18,6 +18,8 @@ pub struct CompanyAttendancesProjectsIdPatchRequest {
     /// Marks the availability of the project
     #[serde(rename = "active", skip_serializing_if = "Option::is_none")]
     pub active: Option<bool>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl CompanyAttendancesProjectsIdPatchRequest {

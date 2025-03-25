@@ -17,6 +17,8 @@ pub struct DocumentUploadFailedWithBadDocumentCategoryResponseAllOfError {
     pub message: Option<String>,
     #[serde(rename = "code", skip_serializing_if = "Option::is_none")]
     pub code: Option<i32>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl DocumentUploadFailedWithBadDocumentCategoryResponseAllOfError {

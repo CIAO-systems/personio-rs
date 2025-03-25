@@ -17,6 +17,8 @@ pub struct PublicReportItemsAttributesItemsInner {
     pub employee_id: Option<i32>,
     #[serde(rename = "attributes", skip_serializing_if = "Option::is_none")]
     pub attributes: Option<Vec<models::PublicReportItemsAttributesItemsInnerAttributesInner>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PublicReportItemsAttributesItemsInner {

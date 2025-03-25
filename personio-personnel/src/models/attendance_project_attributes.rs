@@ -17,6 +17,8 @@ pub struct AttendanceProjectAttributes {
     pub name: Option<String>,
     #[serde(rename = "active", skip_serializing_if = "Option::is_none")]
     pub active: Option<bool>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl AttendanceProjectAttributes {

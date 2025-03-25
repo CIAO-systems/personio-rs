@@ -15,6 +15,8 @@ use serde::{Deserialize, Serialize};
 pub struct CompanyEmployeesPostRequest {
     #[serde(rename = "employee", skip_serializing_if = "Option::is_none")]
     pub employee: Option<Box<models::CompanyEmployeesPostRequestEmployee>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl CompanyEmployeesPostRequest {

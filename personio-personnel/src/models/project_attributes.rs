@@ -22,6 +22,8 @@ pub struct ProjectAttributes {
     pub created_at: Option<String>,
     #[serde(rename = "updated_at", skip_serializing_if = "Option::is_none")]
     pub updated_at: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl ProjectAttributes {

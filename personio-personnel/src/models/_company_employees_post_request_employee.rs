@@ -48,6 +48,8 @@ pub struct CompanyEmployeesPostRequestEmployee {
     pub supervisor_id: Option<f64>,
     #[serde(rename = "custom_attributes", skip_serializing_if = "Option::is_none")]
     pub custom_attributes: Option<Box<models::CompanyEmployeesPostRequestEmployeeCustomAttributes>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl CompanyEmployeesPostRequestEmployee {

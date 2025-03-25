@@ -17,6 +17,8 @@ pub struct EmployeeCreationErrorResponseError {
     pub code: Option<f64>,
     #[serde(rename = "message", skip_serializing_if = "Option::is_none")]
     pub message: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl EmployeeCreationErrorResponseError {

@@ -23,6 +23,8 @@ pub struct DocumentUploadSuccessResponseAllOfDataAttributes {
     pub employee: Option<Box<models::DocumentEmployeeResponseObject>>,
     #[serde(rename = "category_id", skip_serializing_if = "Option::is_none")]
     pub category_id: Option<Box<models::DocumentCategory>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl DocumentUploadSuccessResponseAllOfDataAttributes {

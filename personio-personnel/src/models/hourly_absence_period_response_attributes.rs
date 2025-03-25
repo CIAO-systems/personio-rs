@@ -52,6 +52,8 @@ pub struct HourlyAbsencePeriodResponseAttributes {
     /// Breakdowns of effective duration by day of absence.
     #[serde(rename = "breakdowns")]
     pub breakdowns: Vec<models::AbsencePeriodBreakdown>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl HourlyAbsencePeriodResponseAttributes {

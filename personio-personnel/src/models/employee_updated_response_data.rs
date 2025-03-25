@@ -15,6 +15,8 @@ use serde::{Deserialize, Serialize};
 pub struct EmployeeUpdatedResponseData {
     #[serde(rename = "id", skip_serializing_if = "Option::is_none")]
     pub id: Option<f64>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl EmployeeUpdatedResponseData {

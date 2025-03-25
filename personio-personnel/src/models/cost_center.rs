@@ -19,6 +19,8 @@ pub struct CostCenter {
     pub value: Option<String>,
     #[serde(rename = "weight", skip_serializing_if = "Option::is_none")]
     pub weight: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl CostCenter {

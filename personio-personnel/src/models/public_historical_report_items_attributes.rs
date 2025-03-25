@@ -47,6 +47,8 @@ pub struct PublicHistoricalReportItemsAttributes {
     pub period_type: Option<PeriodType>,
     #[serde(rename = "items", skip_serializing_if = "Option::is_none")]
     pub items: Option<Vec<models::PublicHistoricalReportItemsAttributesItemsInner>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PublicHistoricalReportItemsAttributes {

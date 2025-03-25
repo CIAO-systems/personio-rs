@@ -79,6 +79,8 @@ pub struct Employee {
     pub profile_picture: Option<Box<models::EmployeeProfilePicture>>,
     #[serde(rename = "dynamic_21827", skip_serializing_if = "Option::is_none")]
     pub dynamic_21827: Option<Box<models::EmployeeDynamic21827>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl Employee {

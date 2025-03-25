@@ -21,6 +21,8 @@ pub struct PerformanceTargetAttribute {
     pub employee_id: Option<i32>,
     #[serde(rename = "performance_targets", skip_serializing_if = "Option::is_none")]
     pub performance_targets: Option<Vec<models::PerformanceTarget>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PerformanceTargetAttribute {

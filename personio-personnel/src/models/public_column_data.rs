@@ -17,6 +17,8 @@ pub struct PublicColumnData {
     pub r#type: Option<String>,
     #[serde(rename = "attributes", skip_serializing_if = "Option::is_none")]
     pub attributes: Option<Vec<models::PublicColumnAttributes>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PublicColumnData {

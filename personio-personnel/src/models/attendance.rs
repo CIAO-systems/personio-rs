@@ -33,6 +33,8 @@ pub struct Attendance {
     pub status: Option<Status>,
     #[serde(rename = "project", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
     pub project: Option<Option<Box<models::AttendanceProject>>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl Attendance {

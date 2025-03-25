@@ -15,6 +15,8 @@ use serde::{Deserialize, Serialize};
 pub struct CompanyAttendancesProjectsIdPatch400ResponseError {
     #[serde(rename = "active", skip_serializing_if = "Option::is_none")]
     pub active: Option<Vec<String>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl CompanyAttendancesProjectsIdPatch400ResponseError {

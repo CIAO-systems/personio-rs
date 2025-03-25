@@ -19,6 +19,8 @@ pub struct DocumentUploadFailedWithUnsupportedFileTypeResponseAllOfError {
     pub code: Option<i32>,
     #[serde(rename = "error_data", skip_serializing_if = "Option::is_none")]
     pub error_data: Option<Box<models::DocumentUploadFailedWithUnsupportedFileTypeResponseAllOfErrorErrorData>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl DocumentUploadFailedWithUnsupportedFileTypeResponseAllOfError {

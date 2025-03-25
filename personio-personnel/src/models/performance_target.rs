@@ -17,6 +17,8 @@ pub struct PerformanceTarget {
     pub performance_target_id: Option<String>,
     #[serde(rename = "performance_target_value", skip_serializing_if = "Option::is_none")]
     pub performance_target_value: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PerformanceTarget {

@@ -27,6 +27,8 @@ pub struct AbsencePeriodAttribute {
     pub half_day_at_end: Option<bool>,
     #[serde(rename = "employee_id", skip_serializing_if = "Option::is_none")]
     pub employee_id: Option<i32>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl AbsencePeriodAttribute {

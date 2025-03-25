@@ -18,6 +18,8 @@ pub struct AbsencePeriodBreakdown {
     /// Number representing the value of duration in minutes.
     #[serde(rename = "effective_duration")]
     pub effective_duration: i32,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl AbsencePeriodBreakdown {

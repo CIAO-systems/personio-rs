@@ -24,6 +24,8 @@ pub struct TimeOffTypeResourceAttributes {
     pub unit: Option<Unit>,
     #[serde(rename = "approval_required", skip_serializing_if = "Option::is_none")]
     pub approval_required: Option<bool>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl TimeOffTypeResourceAttributes {

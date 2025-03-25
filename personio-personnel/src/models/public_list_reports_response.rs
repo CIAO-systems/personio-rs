@@ -23,6 +23,8 @@ pub struct PublicListReportsResponse {
     pub limit: Option<i32>,
     #[serde(rename = "data", skip_serializing_if = "Option::is_none")]
     pub data: Option<Vec<models::PublicReportData>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PublicListReportsResponse {

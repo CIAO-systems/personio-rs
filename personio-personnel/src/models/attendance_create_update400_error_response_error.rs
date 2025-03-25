@@ -19,6 +19,8 @@ pub struct AttendanceCreateUpdate400ErrorResponseError {
     pub message: Option<String>,
     #[serde(rename = "detailed_message", skip_serializing_if = "Option::is_none")]
     pub detailed_message: Option<Vec<models::AttendanceCreateUpdate400ErrorResponseErrorDetailedMessageInner>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl AttendanceCreateUpdate400ErrorResponseError {

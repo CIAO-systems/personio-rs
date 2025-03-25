@@ -17,6 +17,8 @@ pub struct AttendanceDelete400ErrorResponseError {
     pub code: Option<i32>,
     #[serde(rename = "message", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
     pub message: Option<Option<serde_json::Value>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl AttendanceDelete400ErrorResponseError {

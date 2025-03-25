@@ -33,6 +33,8 @@ pub struct AttendanceCreateUpdate400ErrorResponseErrorDetailedMessageInner {
     pub comment: Option<String>,
     #[serde(rename = "project_id", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
     pub project_id: Option<Option<i32>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl AttendanceCreateUpdate400ErrorResponseErrorDetailedMessageInner {

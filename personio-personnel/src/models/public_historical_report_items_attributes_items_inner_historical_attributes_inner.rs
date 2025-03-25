@@ -33,6 +33,8 @@ pub struct PublicHistoricalReportItemsAttributesItemsInnerHistoricalAttributesIn
     pub amount: Option<String>,
     #[serde(rename = "currency_symbol", skip_serializing_if = "Option::is_none")]
     pub currency_symbol: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PublicHistoricalReportItemsAttributesItemsInnerHistoricalAttributesInner {

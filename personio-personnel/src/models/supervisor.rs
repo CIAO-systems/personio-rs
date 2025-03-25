@@ -17,6 +17,8 @@ pub struct Supervisor {
     pub label: Option<String>,
     #[serde(rename = "value", skip_serializing_if = "Option::is_none")]
     pub value: Option<Box<models::ShortEmployee>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl Supervisor {

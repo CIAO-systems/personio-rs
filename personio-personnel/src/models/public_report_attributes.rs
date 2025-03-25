@@ -45,6 +45,8 @@ pub struct PublicReportAttributes {
     pub filters: Option<Vec<models::PublicReportAttributesFiltersInner>>,
     #[serde(rename = "period_type", skip_serializing_if = "Option::is_none")]
     pub period_type: Option<PeriodType>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PublicReportAttributes {

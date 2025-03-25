@@ -21,6 +21,8 @@ pub struct EmployeeLastName {
     pub r#type: Option<models::TypeEnum>,
     #[serde(rename = "universal_id", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
     pub universal_id: Option<Option<serde_json::Value>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl EmployeeLastName {

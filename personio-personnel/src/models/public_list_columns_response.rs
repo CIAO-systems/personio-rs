@@ -23,6 +23,8 @@ pub struct PublicListColumnsResponse {
     pub limit: Option<i32>,
     #[serde(rename = "data", skip_serializing_if = "Option::is_none")]
     pub data: Option<Box<models::PublicColumnData>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PublicListColumnsResponse {

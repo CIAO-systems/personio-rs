@@ -21,6 +21,8 @@ pub struct ErrorDetails {
     pub r#type: Option<String>,
     #[serde(rename = "_meta", skip_serializing_if = "Option::is_none")]
     pub _meta: Option<Vec<models::ErrorMeta>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl ErrorDetails {

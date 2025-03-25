@@ -30,6 +30,8 @@ pub struct AttendanceUpdateRequest {
     /// Optional, default value is true. If set to false, the approval status of the attendance period will be \"pending\" if an approval rule is set for the attendances type. The respective approval flow will be triggered.
     #[serde(rename = "skip_approval", skip_serializing_if = "Option::is_none")]
     pub skip_approval: Option<bool>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl AttendanceUpdateRequest {

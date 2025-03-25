@@ -17,6 +17,8 @@ pub struct PerformanceKpi {
     pub performance_kpi_id: Option<String>,
     #[serde(rename = "performance_kpi_value", skip_serializing_if = "Option::is_none")]
     pub performance_kpi_value: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PerformanceKpi {

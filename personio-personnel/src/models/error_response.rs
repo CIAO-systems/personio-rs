@@ -17,6 +17,8 @@ pub struct ErrorResponse {
     pub success: Option<bool>,
     #[serde(rename = "error", skip_serializing_if = "Option::is_none")]
     pub error: Option<Box<models::ErrorResponseError>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl ErrorResponse {

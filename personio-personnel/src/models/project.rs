@@ -19,6 +19,8 @@ pub struct Project {
     pub r#type: Option<String>,
     #[serde(rename = "attributes", skip_serializing_if = "Option::is_none")]
     pub attributes: Option<Box<models::ProjectAttributes>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl Project {

@@ -21,6 +21,8 @@ pub struct HolidayCalendarValueAttributes {
     pub country: Option<Option<serde_json::Value>>,
     #[serde(rename = "state", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
     pub state: Option<Option<serde_json::Value>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl HolidayCalendarValueAttributes {

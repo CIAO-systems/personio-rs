@@ -54,6 +54,8 @@ pub struct HourlyAbsence {
     /// Breakdowns of effective duration by day of absence.
     #[serde(rename = "breakdowns", skip_serializing_if = "Option::is_none")]
     pub breakdowns: Option<Vec<models::AbsencePeriodBreakdown>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl HourlyAbsence {

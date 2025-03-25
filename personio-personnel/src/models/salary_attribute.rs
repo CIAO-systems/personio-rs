@@ -23,6 +23,8 @@ pub struct SalaryAttribute {
     pub currency_symbol: Option<String>,
     #[serde(rename = "employee_id", skip_serializing_if = "Option::is_none")]
     pub employee_id: Option<i32>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl SalaryAttribute {

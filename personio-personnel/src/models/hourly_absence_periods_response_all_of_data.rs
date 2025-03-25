@@ -17,6 +17,8 @@ pub struct HourlyAbsencePeriodsResponseAllOfData {
     pub r#type: Option<serde_json::Value>,
     #[serde(rename = "attributes")]
     pub attributes: Box<models::HourlyAbsence>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl HourlyAbsencePeriodsResponseAllOfData {

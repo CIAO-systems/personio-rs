@@ -23,6 +23,8 @@ pub struct DefaultHistoricalAttribute {
     pub employee_id: Option<i32>,
     #[serde(rename = "effective_date", skip_serializing_if = "Option::is_none")]
     pub effective_date: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl DefaultHistoricalAttribute {

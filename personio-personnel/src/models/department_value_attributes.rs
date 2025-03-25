@@ -17,6 +17,8 @@ pub struct DepartmentValueAttributes {
     pub id: i32,
     #[serde(rename = "name")]
     pub name: String,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl DepartmentValueAttributes {

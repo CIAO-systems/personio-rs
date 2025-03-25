@@ -21,6 +21,8 @@ pub struct CustomReportsErrorResponse {
     pub timestamp: Option<String>,
     #[serde(rename = "errors", skip_serializing_if = "Option::is_none")]
     pub errors: Option<Vec<models::ErrorDetails>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl CustomReportsErrorResponse {

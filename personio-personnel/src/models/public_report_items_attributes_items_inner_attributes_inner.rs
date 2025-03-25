@@ -53,6 +53,8 @@ pub struct PublicReportItemsAttributesItemsInnerAttributesInner {
     pub overtime_hours: Option<String>,
     #[serde(rename = "bonus_type", skip_serializing_if = "Option::is_none")]
     pub bonus_type: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PublicReportItemsAttributesItemsInnerAttributesInner {

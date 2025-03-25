@@ -19,6 +19,8 @@ pub struct CostCentersValueInnerAttributes {
     pub id: Option<f64>,
     #[serde(rename = "percentage", skip_serializing_if = "Option::is_none")]
     pub percentage: Option<f64>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl CostCentersValueInnerAttributes {

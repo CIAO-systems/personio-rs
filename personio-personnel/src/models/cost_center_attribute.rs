@@ -21,6 +21,8 @@ pub struct CostCenterAttribute {
     pub employee_id: Option<i32>,
     #[serde(rename = "cost_centers", skip_serializing_if = "Option::is_none")]
     pub cost_centers: Option<Vec<models::CostCenter>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl CostCenterAttribute {

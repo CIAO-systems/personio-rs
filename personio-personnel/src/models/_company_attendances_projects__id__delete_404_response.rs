@@ -17,6 +17,8 @@ pub struct CompanyAttendancesProjectsIdDelete404Response {
     pub success: Option<bool>,
     #[serde(rename = "message", skip_serializing_if = "Option::is_none")]
     pub message: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl CompanyAttendancesProjectsIdDelete404Response {

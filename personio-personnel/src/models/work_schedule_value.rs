@@ -17,6 +17,8 @@ pub struct WorkScheduleValue {
     pub r#type: Option<Option<serde_json::Value>>,
     #[serde(rename = "attributes", skip_serializing_if = "Option::is_none")]
     pub attributes: Option<Box<models::WorkScheduleValueAttributes>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl WorkScheduleValue {

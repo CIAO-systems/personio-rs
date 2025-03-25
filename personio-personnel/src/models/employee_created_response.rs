@@ -17,6 +17,8 @@ pub struct EmployeeCreatedResponse {
     pub success: Option<bool>,
     #[serde(rename = "data", skip_serializing_if = "Option::is_none")]
     pub data: Option<Box<models::EmployeeCreatedResponseData>>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl EmployeeCreatedResponse {

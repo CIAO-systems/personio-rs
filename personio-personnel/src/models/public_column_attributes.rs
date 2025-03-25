@@ -19,6 +19,8 @@ pub struct PublicColumnAttributes {
     pub human_readable: Option<String>,
     #[serde(rename = "data_type", skip_serializing_if = "Option::is_none")]
     pub data_type: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl PublicColumnAttributes {

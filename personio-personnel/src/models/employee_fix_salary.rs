@@ -23,6 +23,8 @@ pub struct EmployeeFixSalary {
     pub universal_id: Option<Option<serde_json::Value>>,
     #[serde(rename = "currency", skip_serializing_if = "Option::is_none")]
     pub currency: Option<String>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl EmployeeFixSalary {

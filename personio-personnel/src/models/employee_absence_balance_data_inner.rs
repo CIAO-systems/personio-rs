@@ -25,6 +25,8 @@ pub struct EmployeeAbsenceBalanceDataInner {
     /// Available balance is what actually left to be planned (where upcoming absence periods are already deducted).
     #[serde(rename = "available_balance", skip_serializing_if = "Option::is_none")]
     pub available_balance: Option<f64>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl EmployeeAbsenceBalanceDataInner {

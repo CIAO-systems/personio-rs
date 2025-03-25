@@ -17,6 +17,8 @@ pub struct AbsencePeriodResponse {
     pub success: bool,
     #[serde(rename = "data")]
     pub data: Box<models::AbsencePeriodsResponseAllOfData>,
+    #[serde(flatten)]
+    pub additional_properties: std::collections::HashMap<String, serde_json::Value>,
 }
 
 impl AbsencePeriodResponse {
