@@ -24,9 +24,9 @@ pub struct Absence {
     #[serde(rename = "days_count", skip_serializing_if = "Option::is_none")]
     pub days_count: Option<f64>,
     #[serde(rename = "half_day_start", skip_serializing_if = "Option::is_none")]
-    pub half_day_start: Option<bool>,
+    pub half_day_start: Option<u8>, // should be bool, but https://github.com/personio/api-docs/issues/204
     #[serde(rename = "half_day_end", skip_serializing_if = "Option::is_none")]
-    pub half_day_end: Option<bool>,
+    pub half_day_end: Option<u8>, // should be bool, but https://github.com/personio/api-docs/issues/204
     #[serde(rename = "time_off_type", skip_serializing_if = "Option::is_none")]
     pub time_off_type: Option<Box<models::AbsenceTimeOffType>>,
     #[serde(rename = "employee", skip_serializing_if = "Option::is_none")]
